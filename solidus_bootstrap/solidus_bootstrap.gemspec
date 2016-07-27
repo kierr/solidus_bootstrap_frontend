@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'solidus_bootstrap'
   s.version     = '1.1.0'
-  s.summary     = 'Switches out Soldius’ entire frontend for a bootstrap 3 powered frontend'
+  s.summary     = 'Switches out Solidus’ entire frontend for a bootstrap 3 powered frontend'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
 
@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'bootstrap-sass'
   s.add_runtime_dependency 'bootstrap-kaminari-views'
 
-  s.add_runtime_dependency 'solidus_core', '1.1'
-  s.add_runtime_dependency 'solidus_frontend', '1.1'
+  s.add_runtime_dependency 'solidus_core', '>= 1.0'
+  s.add_runtime_dependency 'solidus_frontend', '>= 1.0'
 end
