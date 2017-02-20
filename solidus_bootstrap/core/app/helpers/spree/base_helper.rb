@@ -1,6 +1,10 @@
 module Spree
   module BaseHelper
 
+    def plural_resource_name(resource_class)
+      resource_class.model_name.human(count: Spree::I18N_GENERIC_PLURAL)
+    end
+    
     # Defined because Rails' current_page? helper is not working when Spree is mounted at root.
     def current_spree_page?(url)
       path = request.fullpath.gsub(/^\/\//, '/')
@@ -202,5 +206,6 @@ module Spree
         end
       end
     end
+
   end
 end
